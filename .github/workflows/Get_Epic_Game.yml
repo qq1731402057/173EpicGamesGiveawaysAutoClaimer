@@ -1,8 +1,8 @@
 name: Get Epic Game
 
 on:
-#  schedule: # 删除本行开头的 # 号
-#    - cron: "25 2 * * *" # 删除本行开头的 # 号
+  schedule: # 删除本行开头的 # 号
+    - cron: "5 16 * * *" # 删除本行开头的 # 号
   push:
     branches:
       - master
