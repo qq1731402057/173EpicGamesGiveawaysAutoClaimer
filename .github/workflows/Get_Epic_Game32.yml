@@ -37,17 +37,17 @@ jobs:
           cd workdir
           npm install
           node claimer '${{ secrets.EMAIL32 }}' '${{ secrets.PASSWD32 }}' 0 '${{ secrets.SECRET32 }}' > games.info
-      - name: Edit Games.info
+      - name: Edit 32Games.info
         if: always()
         run: |
           cd workdir
-          sed -i '1d' games.info
-          sed -i 's/Successfully claimed/成功领取/' games.info
-          sed -i 's/was already claimed for this account/已经领取/' games.info
-          sed -i '$d' games.info
-          date --rfc-3339=seconds >> ../games.info
-          cat games.info >> ../games.info
-          echo >> ../games.info
+          sed -i '1d' 32games.info
+          sed -i 's/Successfully claimed/成功领取/' 32games.info
+          sed -i 's/was already claimed for this account/已经领取/' 32games.info
+          sed -i '$d' 32games.info
+          date --rfc-3339=seconds >> ../32games.info
+          cat 32games.info >> ../32games.info
+          echo >> ../32games.info
       - name: Commit Files
         run: |
           git config --local user.email "action@github.com"
