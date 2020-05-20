@@ -36,7 +36,7 @@ jobs:
         run: |
           cd workdir
           npm install
-          node claimer '${{ secrets.EMAIL32 }}' '${{ secrets.PASSWD32 }}' 0 '${{ secrets.SECRET32 }}' > games.info
+          node claimer '${{ secrets.EMAIL32 }}' '${{ secrets.PASSWD32 }}' 0 '${{ secrets.SECRET32 }}' > 32games.info
       - name: Edit 32Games.info
         if: always()
         run: |
