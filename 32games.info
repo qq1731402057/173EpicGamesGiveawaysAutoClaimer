@@ -109,3 +109,7 @@
 2020-07-19 00:15:05+08:00
  2020-07-19 | 00:15:05.511 | INFO  | Torchlight II 已经领取
 
+2020-07-24 00:16:01+08:00
+ 2020-07-24 | 00:16:00.562 | INFO  | 成功领取 Next Up Hero (F2007231616007785)
+ 2020-07-24 | 00:16:01.021 | WARN  | Failed to claim Tacoma (Error: errors.com.epicgames.purchase.purchase.captcha.challenge)
+
